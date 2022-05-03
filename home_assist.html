@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/ha.css" />
+    <link rel="icon" href="/bimms-logo.png" sizes="32x40" type="image/png">
+    <title>BIMMS</title>
+  </head>
+  <body>
+    <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+        <img src="/img/bimms-logo.png" width="100" height="25" alt="">
+      </a>
+    </header>
+    <br>
+    <div id="text-container">
+      <p>Progress: <span id="progress-text">0</span>%</p>
+    </div>
+    <input type="file" name="load" id="file-input" />
+    <div class="message-container">
+      <p class="message">ID:</p>
+      <p class="message" id="id-output">None</p>
+    </div>
+    <div class="canvas">
+    <div class="col-9 bg-light p-3 border">
+      <canvas id="three-canvas"></canvas>
+    </div>
+    </div>
+    <br> <br> <br> <br> <br>
+
+    <div class="dropdown">
+      <button class="dropbtn" type="button" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Elements</button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <div class="dropdown-content">
+          <li><input type="checkbox" id="IFCWALLSTANDARDCASE" name="Walls" value="yes" checked="true"> Walls</li>
+          <li><input type="checkbox" id="IFCSLAB" name="Slabs" value="yes" checked="true"> Slabs</li>
+          <li><input type="checkbox" id="IFCWINDOW" name="Windows" value="yes" checked="true"> Windows</li>
+          <li><input type="checkbox" id="IFCFURNISHINGELEMENT" name="Furniture" value="yes" checked="true"> Furniture</li>
+          <li><input type="checkbox" id="IFCDOOR" name="Doors" value="yes" checked="true"> Doors</li>
+          <li><input type="checkbox" id="IFCMEMBER" name="Curtain wall structure" value="yes" checked="true"> Curtain wall structure</li>
+          <li><input type="checkbox" id="IFCPLATE" name="Curtain wall plates" value="yes" checked="true"> Curtain wall plates</li>
+      </div>
+      </ul>
+    </div>
+    <br> <br> <br>
+    <script src="src/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "ifcjs-test",
+  "version": "1.0.0",
+  "description": "IFC JS from scratch",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c ./rollup.config.js",
+    "watch": "rollup -w -c ./rollup.config.js"
+  },
+  "author": "Karina Bochini",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.139.2",
+    "web-ifc-three": "^0.0.112"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.2.0"
+  }
+}
